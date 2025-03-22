@@ -1,40 +1,22 @@
-/* Reset and global styles */
-* {
+*{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
-
-body {
-  background: linear-gradient(135deg, #22181C, #312F2F);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-}
-
-h1 {
+h1{
   color: #EF626C;
-  font-size: 3rem;
-  font-weight: bold;
-  text-shadow: 3px 3px 10px rgba(239, 98, 108, 0.8);
-  animation: fadeIn 1s ease-in-out;
 }
-
-/* Main game container */
-.container {
+body{
+  background-color: #22181C;
+  text-align: center;
+}
+.container{
   height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Tic-tac-toe grid */
-.game {
+.game{
   height: 60vmin;
   width: 60vmin;
   display: flex;
@@ -42,92 +24,53 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 1.5vmin;
-  backdrop-filter: blur(5px);
-  padding: 1rem;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
 }
 
-/* Grid boxes */
-.box {
+.box{
   height: 18vmin;
   width: 18vmin;
-  border-radius: 1rem;
+  border-radius:1rem ;
   border: none;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 1rem rgba(0,0,0,.3);
   font-size: 8vmin;
   color: #84DCCF;
-  background: rgba(246, 232, 234, 0.8);
-  backdrop-filter: blur(5px);
-  transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+  background-color:#F6E8EA;
 }
 
-.box:hover {
-  transform: scale(1.05);
-  background: #EF626C;
-  color: #fff;
-  box-shadow: 0px 5px 20px rgba(239, 98, 108, 0.8);
-}
-
-/* Buttons */
-#reset-btn, #new-btn {
-  padding: 1rem 2rem;
+#reset-btn{
+  padding: 1rem;
   font-size: 1.25rem;
-  background: rgba(49, 47, 47, 0.9);
+  background-color:#312F2F ;
   color: #EF626C;
   border-radius: 1rem;
   border: none;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 5px 10px rgba(239, 98, 108, 0.4);
+}
+#new-btn{
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color:#312F2F ;
+  color: #EF626C;
+  border-radius: 1rem;
+  border: none;
 }
 
-#reset-btn:hover, #new-btn:hover {
-  background: #EF626C;
-  color: #312F2F;
-  transform: scale(1.1);
-  box-shadow: 0px 8px 20px rgba(239, 98, 108, 0.8);
+#msg{
+  color:#F6E8EA;
+  font-size: 5vmin;
 }
 
-/* Message Container */
-.msg-container {
+.msg-container{
   margin-bottom: 20vmin;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction:column ;
   gap: 4rem;
 }
-
-#msg {
-  color: #F6E8EA;
-  font-size: 5vmin;
-  font-weight: bold;
-  text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.5);
-  animation: pop 1.5s infinite alternate ease-in-out;
-}
-
-/* Hide elements */
-.hide {
+.hide{
   display: none;
+
 }
 
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-@keyframes pop {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(
+make it beatiful
